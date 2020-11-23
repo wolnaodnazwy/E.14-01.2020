@@ -24,15 +24,17 @@
               $sql = "SELECT podzespoly.id, podzespoly.nazwa, podzespoly.opis, podzespoly.cena FROM podzespoly WHERE cena < 1000";
               $query = mysqli_query($conn, $sql);
               ?>
-      <table>
-        <tr> <th>NUMER</th> <th>NAZWA PODZESPOŁU</th> <th>OPIS</th> <th>CENA</th> </tr>
-            <?php while($row = mysqli_fetch_array($query)){ ?>
-        <tr><td> <?php echo $row["id"]; ?> </td>
-           <td> <?php echo $row["nazwa"]; ?> </td>
-           <td> <?php echo $row["opis"];?> </td>
-            <td id = "cena"> <?php echo $row["cena"]; ?> </td> </tr>
-            <?php } ?>
-      </table>
+    <table>
+          <tr> <th>NUMER</th> <th>NAZWA PODZESPOŁU</th> <th>OPIS</th> <th>CENA</th> </tr>
+              <?php while($row = mysqli_fetch_array($query)){
+                echo "<tr>";
+                echo "<td>".$row["id"]."</td>";
+                echo "<td>".$row["nazwa"]."</td>";
+                echo "<td>".$row["opis"]."</td>";
+                echo "<td id = 'cena'>".$row["cena"]."</td>";
+                echo "</tr>";
+               } ?>
+        </table>
             <?php mysqli_close($conn); ?>
     </section>
     <footer>
