@@ -1,0 +1,61 @@
+body{
+  font-family: Georgia;
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  background-color: #63AC74;
+  color: Orange;
+  height: 140px;
+  font-size: 160%
+}
+#menu{
+  float: right;
+  width: 50%;
+}
+#logo{
+  float: right;
+  width: 50%;
+}
+#main{
+  background-color: #E3F6E7;
+  height: 500px;
+  padding: 20px;
+  clear: both;
+}
+footer{
+  background-color: #63AC74;
+  height: 150px;
+}
+#picture{
+  width: 25%;
+  float: left;
+}
+#info{
+  width: 25%;
+  float: left;
+}
+#telefon{
+  width: 25%;
+  float: left;
+}
+#autor{
+  width: 25%;
+  float: left;
+}
+a{
+  color: Orange;
+  margin: 15px;
+}
+table{
+  width: 100%;
+  border: 2px solid green;
+}
+th{
+background-color: #63AC74;
+color: white;
+}
+
+#cena{
+  text-align: right;
+}
